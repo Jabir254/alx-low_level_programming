@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *supper - check if c is upper
  *
