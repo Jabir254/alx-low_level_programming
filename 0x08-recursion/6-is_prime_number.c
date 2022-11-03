@@ -1,27 +1,33 @@
 #include "main.h"
 
-int is_prime_number(int n)
-{
-	int start = n / 2;
+/**
+ * prime_a - main - check the code
+ * @a: number
+ * @b: number of power
+ * Return: Always 0.
+ */
 
-	if (n <= 1)
+int prime_a(int a, int b)
+{
+	if (a <= 1 || (a != b && a % b == 0))
+	{
 		return (0);
-	return (is_prime(n, start));
+	}
+		else if (a == b)
+	{
+		return (1);
+	}
+	return (prime_a(a, b + 1));
 }
 
-/**
-* is_prime - returns the 1 if n is prime
-* @n: number to be checked
-* @start: number to start checking from
-*
-* Return: 1 if n is prime, 0 otherwise
-*/
 
-int is_prime(int n, int start)
+/**
+ * is_prime_number - main - check the code
+ * @n: number
+ *
+ * Return: Always 0.
+ */
+int is_prime_number(int n)
 {
-	if (start <= 1)
-		return (1);
-	else if (n % start == 0)
-		return (0);
-	return (is_prime(n, start - 1));
+	return (prime_a(n, 2));
 }
