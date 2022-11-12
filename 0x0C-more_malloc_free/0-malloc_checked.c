@@ -5,8 +5,7 @@
  *
  * Return: pointer to the address of the memory block
  */
-
-int void *malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	void *n;
 
