@@ -32,7 +32,3 @@ int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
 
 #endif
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-
